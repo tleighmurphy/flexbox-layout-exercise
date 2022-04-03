@@ -96,7 +96,7 @@ textarea {
    ========================================================================== */
 
 html {
-  background-color: #fff;
+  background-color: darkcyan;
   height: 100%;
   width: 100%;
 }
@@ -105,41 +105,49 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   padding: 0 2em;
   font-size: 1.25em;
-  height: 100%;
+  display: flex;
+  justify-content: center;
   color: #fff;
+}
+
+.flex-container {
+    display: flex;
+    
+    
+    flex-flow: row wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+}
+
+p span {
+    font-family: 'Lora', sans-serif;
 }
 
 header,
 footer {
     display: flex;
-    justify-content: center;
-    align-items: center;
-  background-color: #222;
-  height: 80px;
-  width: 100%;
+    justify-content: flex-start;
+    
+    width: 100%;
+}
+
+header h1{
+    font-family: 'Lora', sans-serif;
+    font-size: 3em;
+    border-bottom: 5px solid darkmagenta;
 }
 
 main {
     display: flex;
     justify-content: center;
-    align-items: center;
-  background-color: #ccc;
-  height: 250px;
+    border-bottom: 3px dotted darkmagenta;
+  
   width: 100%;
 }
 
-header,
-footer,
-main {
 
-}
-
-.flex-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: row wrap;
-    justify-content: space-between;
+main p {
+    font-size: 1.35em;
 
 }
 
@@ -147,12 +155,17 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-  color: #fff;
+  
   line-height: 1.5em;
-  font-size: 1.6em;
-  background-color: #f16059;
-  width: 30%;
-  height: 200px;
+  font-size: 1em;
+  border-bottom: 1 px solid #555;
+  
+}
+
+footer {
+    border-top: 5px solid darkmagenta;
+    color: #fff;
+
 }
 
 /* ==========================================================================
